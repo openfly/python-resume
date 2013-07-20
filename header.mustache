@@ -1,0 +1,56 @@
+\documentclass{article}
+
+\voffset = -20pt
+\hoffset = -77pt
+\headsep = 100pt
+\textwidth = 500pt
+
+\usepackage{fancyhdr}
+\usepackage{calc}
+\usepackage[explicit]{titlesec}
+\usepackage{lipsum}
+\usepackage{graphicx}
+\pagestyle{fancy}
+\fancyhf{}
+\newcommand{\changefont}{%
+    \fontsize{9}{11}\selectfont
+}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyhead[L]{\fontsize{20}{15} \selectfont {{profile.firstName}} {{profile.lastName}} }
+\fancyhead[R]{ \includegraphics[trim = 0mm 15mm 0mm 0mm, clip, width=1in]{headshot.png} }
+
+\lfoot{ {{profile.mainAddress}} }
+\rfoot{ {{#profile.phoneNumbers}}{{#values}}{{phoneNumber}}{{/values}}{{/profile.phoneNumbers}} \\{{profile.emailAddress}}}
+
+\newlength\Titlewd
+\newlength\TitleBox
+
+\newcommand*\varhrulefill{%
+  \leavevmode\leaders\hrule height 0.6ex depth -0.5ex\hfill\kern0pt}
+
+\titleformat{\section}
+  {\normalfont\Large\bfseries\filcenter}{}{0em}{%
+  \settowidth\Titlewd{\Large\bfseries#1}%
+  \setlength\TitleBox{\minof{\Titlewd}{.7\textwidth}}%
+  \varhrulefill\enspace\parbox{\TitleBox}{\centering #1}\enspace\varhrulefill}
+\titlespacing*{\section}
+  {0pt}{4.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
+
+\titleformat{\subsection}
+  {\normalfont\fontsize{12}{15}\bfseries}{}{0em}{%
+  \settowidth\Titlewd{\bfseries#1}%
+  \setlength\TitleBox{\minof{\Titlewd}{1.0\textwidth}}%
+  \enspace\parbox{\TitleBox}{#1}\enspace}
+\titlespacing*{\subsection}
+  {0pt}{0.5ex plus 1ex minus .2ex}{0.3ex plus .2ex}
+
+\titleformat{\subsubsection}
+  {\normalfont\fontsize{10}{15}\bfseries}{}{0em}{%
+  \settowidth\Titlewd{\bfseries#1}%
+  \setlength\TitleBox{\minof{\Titlewd}{1.0\textwidth}}%
+  \enspace\parbox{\TitleBox}{#1}\enspace}
+\titlespacing*{\subsubsection}
+  {0pt}{0.5ex plus 1ex minus .2ex}{0.3ex plus .2ex}
+
+\begin{document}
