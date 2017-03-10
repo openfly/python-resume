@@ -12,9 +12,13 @@ __copyright__ = 'Copyright 2012, Matt Joyce'
 import json
 import pystache
 
+
 def load_json(json_file):
     ''' load specified json file into dictionary '''
-    
+    with open('file.json') as data_file:
+        data = json.load(data_file)
+    return data
+
 
 def render_latex(profile):
     ''' render a LaTeX format from JSON values '''
@@ -35,6 +39,9 @@ def render_latex(profile):
 
     return resume
 
+
+
+profile = load_json(json_file)
 
 resume = render_latex(profile)
 
