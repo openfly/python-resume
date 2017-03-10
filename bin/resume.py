@@ -71,6 +71,12 @@ def main():
         help='specify template path',
         default='../templates/'
     )
+    # specify headshot
+    parser.add_argument(
+        '-s', '--headshot', nargs='?',
+        help='specify headshot',
+        default=False
+    )
     # parse
     try:
         args = parser.parse_args()
