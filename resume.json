@@ -1,0 +1,112 @@
+
+{ 
+    "Name": "Matt Joyce",
+    "Phone": "917.596.9619",
+    "Email": "matt@surly.bike",
+    "GitHub": "http://github.com/openfly/",
+    "URL": "http://surly.bike/",
+    "Experience" : [
+        {
+            "Title" : "Sales Engineer",
+            "Company" : "Big Switch Networks",
+            "Dates" : "11/2014-Current",
+            "Description": "Sales Engineering team was tasked with supporting high profile customers and assisting in pre-sale engagements.  I presented on topics related to SDN, solved problems for customers, designed POC architectures, presented at conferences, and wrote code to demonstrate the features of our product."
+        },
+        {
+            "Title": "Automation Engineer",
+            "Company": "Hewlett-Packard",
+            "Dates": "10/2013-11/2014",
+            "Description": "I wrote automation utilities, and assisted in the deployment and management of a 15000+ node physical cloud environment.  Among key accomplishments was writing a CMDB API and client library, writing utilities for cleaning up databases when systems were removed from the system, and managing our legacy production Jenkins environment which was used to pipeline the orchestration components that ran the cloud.  We made extensive use of Python, Chef, and Jenkins in this environment."
+        },
+        {
+            "Title": "Software Engineer",
+            "Company": "Cloudscaling",
+            "Dates": "4/2012-8/2013",
+            "Description": "Cloudscaling was a San Francisco based startup focused on creating a productized version of OpenStack for enterprise customers.  Our product was unique in it's scalability and resiliency.  We contributed code back to the Open Source community when possible, but spent a large portion of our time focused on the product itself and the tools that helped created it.  Among my achievements here were the creation of an automated packaging deployment system for our build environment, chef integration with a custom key value pair database, and contributions to the front end of the web gui.  While here, I also was a Core Contributor for the Open Stack project on the python-openstackclient."
+        },
+        {
+            "Title": "Senior Cloud Administrator",
+            "Company": "CSC at NASA Ames Research Center",
+            "Dates" : "3/2012-4/2012",
+            "Description": "1 Month is a short stay at a job.  I left this in to demonstrate that NASA was committed to keeping me on board after Nebula was ended.  But, they really didn't have a place for me.  I spent a month hanging out at the National Advanced Super Computing Facility giving talks on virtualization related topics and answering questions for researchers about cloud / virtualization bottle necks.  I became bored, and felt like I was not contributing to NASA in a meaningful way, and felt that following the OpenStack project into the private sector might ultimately prove a more beneficial use of my time."
+        },
+        {
+            "Title": "DevOps",
+            "Company": "Dell / Perot Systems at NASA Ames Research Center",
+            "Dates": "9/2010-3/2012",
+            "Description": "While at Ames I worked on the award winning Nebula project as one of two full time DevOps personel. We augmented a small development team. At that time, Nebula was focused on the creation of an open source elastic cloud solution called ’nova’. Later, Rackspace contributed their project ’swift’ and we together started the OpenStack project.  Today OpenStack is a major player in the elastic cloud space. The NSA, DreamHost, Rackspace, and several telecoms all operate large public clouds built on OpenStack.  Many more organizations such as CERN, NASA, and Verisign continue to utilize OpenStack in private cloud deployments.  While at Ames, I deployed the first production OpenStack clusters ever. We also worked on FISMA low and moderate certification for the cloud environment. Security was a high priority for NASA and our sprint planning reflected that. Today I am among a handful of people who have been using OpenStack since before it was OpenStack.  In addition to the ground breaking work we did on OpenStack we ran several Ganeti, and Eucalyptus clusters. Our clusters were used mostly for research related tasks in weather analysis, and mars exploration, however one cluster hosted USASpending.gov for the White House."
+        },
+        {
+            "Title": "System Engineer",
+            "Company": "Contractor at JP Morgan Chase & Co.",
+            "Dates": "9/2009-9/2010",
+            "Description": "I joined the configuration management team for GTI ( Global Technology Infrastructure ) at JPMC. My past ex- perience with HPSA ( Opsware ) was of extreme value to the team. While there I created severa  l custom solutions for integrating HPSA and general automation into the process and workflows of GTI.  This job was effectively a continuation of my previous job at HP but with a long term direct focus on JPM and their needs."
+        },
+        {
+            "Title": "Technical Consultant",
+            "Company": "Hewlett Packard",
+            "Dates": "9/2008-4/2009",
+            "Description": "I was a part of the professional services organization at HP. We flew around North America deploying, and servic- ing the needs of HP customers. My specific area of expertise was HP Server Automation ( originally Opsware ). While at HP I architected and deployed automation solutions into environments measuring in the tens of thousands."
+        },
+        {
+            "Title": "Network Administrator",
+            "Company": "TBWA\\Chiat\\Day",
+            "Dates": "4/2006-8/2008",
+            "Description": " UNIX Administration of World Wide web cluster environment. I bridged a gap between the two corporate entities as well as focused my attention on maintaining our global web   server environment. In my spare time I aided in the day to day operation of the national infrastructure housed out of the NY data center."
+        },
+        {
+            "Title": "Security Consultant",
+            "Company": "Net2s",
+            "Dates": "4/2006-8/2008",
+            "Description": "Wireless Infrastructure Audits, Network Infrastructure Audits, Basic Application Audits."
+        },
+        {
+            "Title": "Systems Administrator",
+            "Company": "Visual Trading Systems",
+            "Dates": "1/2004-10/2005",
+            "Description": "Systems Administrator in Charge of Business Applications for Industry Leading On-line Currency Exchange."
+        },
+        {
+            "Title": "Developer ( Intern )",
+            "Company": "CBS Corporation",
+            "Dates": "Summer of 2003",
+            "Description": "Member of web development team.  Worked an Intranet Design for Infinity Radio.  Worked on Web interface to database shared by MS Access forms."
+        }
+    ],
+    "Honors & Awards": {
+        "Ames Contractor Council Certificate of Excellence": "2012",
+        "NASA Group Achievement Award" : "2011",
+        "Runner up team at Tech Crunch Hack Day" : "2010",
+        "Demo Team at Internet 2": "2003",
+        "Demo Team Leader at NECC": "2003",
+        "Speaker at ITT Vanguard Cyber Insecurity": "2010",
+        "Speaker at Notacon": "2010",
+        "Speaker at Def Con": "2011",
+        "Speaker at Shmoocon": "2013",
+        "Speaker at OpenStack Summit": "Sprint 2013",
+        "Speaker at Kloudcamp Panama": "Summer 2013",
+        "Speaker Selection Committee AppSec USA": "2013",
+        "Speaker at Toorcamp": "2014",
+        "Speaker at DevOps Summit NYC": "2015",
+        "Speaker at Hushcon East": "2015",
+        "Speaker at Hushcon East": "2016",
+        "Speaker at OpenStack Summit": "Fall 2015"
+    },
+    "Projects": [
+        {
+            "Name": "python-symphony",
+            "URL": "https://github.com/symphonyoss/python-symphony",
+            "Description": "a python SDK for the Symphony Secure Chat API"
+        },
+        {
+            "Name": "OpenStack",
+            "URL": "http://www.openstack.org",
+            "Description": "An open source cloud framework"
+        },
+        {
+            "Name": "Leonard Internet Fridge",
+            "URL": "http://www.fridge.wtf",
+            "Description": "An internet connected 1950s classic beer fridge"
+        }
+    ]
+}
