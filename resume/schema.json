@@ -1,10 +1,12 @@
 
 { 
     "Name": "Melanie Examplton",
+    "Address": "1414 Mocking Bird Lane Del Mar, California 90123",
     "Phone": "911.555.9911",
     "Email": "mexamplton@example.bike",
     "GitHub": "http://github.com/mexamplton/",
     "URL": "http://example.bike/",
+    "Objective": "Example Objective",
     "Experience" : [
         {
             "Title" : "Example Title 1",
@@ -19,11 +21,16 @@
             "Description": "Example Description 2"
         }
     ],
-    "Honors & Awards": {
-        "Example Award 1": "2012",
-        "Example Award 2" : "2011",
-        "Speaker at Example Summit": "Fall 2015"
-    },
+    "Honors & Awards": [
+        {
+            "Award": "Example Award 1",
+            "Date": "2012"
+        },
+        {
+            "Award": "Example Award 2",
+            "Date": "2011"
+        }
+    ],
     "Projects": [
         {
             "Name": "example project",

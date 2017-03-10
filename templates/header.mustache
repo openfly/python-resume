@@ -17,11 +17,11 @@
 }
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
-\fancyhead[L]{\fontsize{20}{15} \selectfont {{profile.firstName}} {{profile.lastName}} }
+\fancyhead[L]{\fontsize{20}{15} \selectfont {{Name}} }
 \fancyhead[R]{ \includegraphics[trim = 0mm 15mm 0mm 0mm, clip, width=1in]{headshot.png} }
 
-\lfoot{ {{profile.mainAddress}} }
-\rfoot{ {{#profile.phoneNumbers}}{{#values}}{{phoneNumber}}{{/values}}{{/profile.phoneNumbers}} \\{{profile.emailAddress}}}
+\lfoot{ {{Address}} }
+\rfoot{ {{Phone}} \\{{Email }}}
 
 \newlength\Titlewd
 \newlength\TitleBox

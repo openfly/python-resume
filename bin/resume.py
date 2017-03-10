@@ -19,7 +19,7 @@ template_path = '../templates/'
 
 def load_json(json_file):
     ''' load specified json file into dictionary '''
-    with open('file.json') as data_file:
+    with open(json_file) as data_file:
         data = json.load(data_file)
     return data
 
@@ -35,11 +35,20 @@ def render_latex(profile):
     resume += renderer.render_path(template_path + 'experience.mustache', profile)
     for role in profile['Experience']:
         resume += renderer.render_path(template_path + 'position.mustache', role)
+    resume += renderer.render_path(template_path + 'projects.mustache', profile)
     for project in profile['Projects']:
-        resume += renderer.render_path(template_path + 'projects.mustache', project)
+        resume += renderer.render_path(template_path + 'project.mustache', project)
     resume += renderer.render_path(template_path + 'honorsawards.mustache', profile)
+    for honor in profile['Honors & Awards']:
+        resume += renderer.render_path(template_path + 'honor.mustache', honor)
     resume += renderer.render_path(template_path + 'footer.mustache', profile)
     return resume
+
+
+def write_to_file(filename, filedata):
+    with open(filename, "w") as text_file:
+        text_file.write("{0}".format(filedata))
+    return 0
 
 
 def main():
@@ -68,7 +77,7 @@ def main():
     profile = load_json(args.resume)
     # generate resume LaTeX from json blob
     resume = render_latex(profile)
-    print resume
+    write_to_file(args.output, resume)
 
 
 if __name__ == "__main__":
