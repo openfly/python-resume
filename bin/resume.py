@@ -31,8 +31,10 @@ def render_latex(profile):
     resume = renderer.render_path('header.mustache', profile)
     resume += renderer.render_path('objective.mustache', profile)
     resume += renderer.render_path('experience.mustache', profile)
-    for connection in profile['profile']['positions']['values']:
-        resume += renderer.render_path('position.mustache', connection)
+    for role in profile['Experience']:
+        resume += renderer.render_path('position.mustache', role)
+    for project in profile['Projects']:
+        resume += renderer.render_path('projects.mustache', project)
     resume += renderer.render_path('honorsawards.mustache', profile)
     resume += renderer.render_path('footer.mustache', profile)
     return resume
