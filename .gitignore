@@ -1,6 +1,7 @@
 
 # Swap files
 *.swp
+.DS_Store
 
 # LaTeX
 *.pdf
