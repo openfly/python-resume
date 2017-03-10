@@ -14,8 +14,6 @@ import json
 import pystache
 import sys
 
-template_path = '../templates/'
-
 
 def load_json(json_file):
     ''' load specified json file into dictionary '''
@@ -24,7 +22,7 @@ def load_json(json_file):
     return data
 
 
-def render_latex(profile):
+def render_latex(profile, template_path):
     ''' render a LaTeX format from JSON values '''
     # instantiate pystache renderer
     renderer = pystache.Renderer()
@@ -67,6 +65,12 @@ def main():
         help='specify output filename',
         default='resume.tex'
     )
+    # specify template path
+    parser.add_argument(
+        '-t', '--template', nargs='?',
+        help='specify template path',
+        default='../templates/'
+    )
     # parse
     try:
         args = parser.parse_args()
@@ -76,7 +80,7 @@ def main():
     # generate json blob from file
     profile = load_json(args.resume)
     # generate resume LaTeX from json blob
-    resume = render_latex(profile)
+    resume = render_latex(profile, args.template)
     write_to_file(args.output, resume)
 
 
