@@ -14,6 +14,8 @@ import json
 import pystache
 import sys
 
+template_path = '../templates/'
+
 
 def load_json(json_file):
     ''' load specified json file into dictionary '''
@@ -28,15 +30,15 @@ def render_latex(profile):
     renderer = pystache.Renderer()
 
     # apply profile json set to resume template.
-    resume = renderer.render_path('header.mustache', profile)
-    resume += renderer.render_path('objective.mustache', profile)
-    resume += renderer.render_path('experience.mustache', profile)
+    resume = renderer.render_path(template_path + 'header.mustache', profile)
+    resume += renderer.render_path(template_path + 'objective.mustache', profile)
+    resume += renderer.render_path(template_path + 'experience.mustache', profile)
     for role in profile['Experience']:
-        resume += renderer.render_path('position.mustache', role)
+        resume += renderer.render_path(template_path + 'position.mustache', role)
     for project in profile['Projects']:
-        resume += renderer.render_path('projects.mustache', project)
-    resume += renderer.render_path('honorsawards.mustache', profile)
-    resume += renderer.render_path('footer.mustache', profile)
+        resume += renderer.render_path(template_path + 'projects.mustache', project)
+    resume += renderer.render_path(template_path + 'honorsawards.mustache', profile)
+    resume += renderer.render_path(template_path + 'footer.mustache', profile)
     return resume
 
 
