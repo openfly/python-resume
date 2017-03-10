@@ -1,0 +1,34 @@
+
+{ 
+    "Name": "Melanie Examplton",
+    "Phone": "911.555.9911",
+    "Email": "mexamplton@example.bike",
+    "GitHub": "http://github.com/mexamplton/",
+    "URL": "http://example.bike/",
+    "Experience" : [
+        {
+            "Title" : "Example Title 1",
+            "Company" : "Example Company 1",
+            "Dates" : "11/2014-Current",
+            "Description": "Example Description 1"
+        },
+        {    
+            "Title": "Example Title 2",
+            "Company": "Example Company 2",
+            "Dates": "10/2013-11/2014",
+            "Description": "Example Description 2"
+        }
+    ],
+    "Honors & Awards": {
+        "Example Award 1": "2012",
+        "Example Award 2" : "2011",
+        "Speaker at Example Summit": "Fall 2015"
+    },
+    "Projects": [
+        {
+            "Name": "example project",
+            "URL": "https://github.com/example/python-example",
+            "Description": "a python example for the example API"
+        }
+    ]
+}
