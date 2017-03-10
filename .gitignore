@@ -2,6 +2,12 @@
 # Swap files
 *.swp
 
+# LaTeX
+*.pdf
+.*tex
+.*log
+.*aux
+
 # Object files
 *.o
 *.ko
