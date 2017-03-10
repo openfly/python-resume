@@ -1,0 +1,8 @@
+# This requirements file lists all third-party dependencies for this project.
+
+# setup dependencies
+pip
+
+# pystache
+pystache
+
