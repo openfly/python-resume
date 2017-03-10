@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
+# this is bogusnow -*- coding: utf-8 -*-
 '''
     Matt Joyce's Resume
 '''
@@ -45,7 +45,7 @@ def render_latex(profile, template_path):
 
 def write_to_file(filename, filedata):
     with open(filename, "w") as text_file:
-        text_file.write("{0}".format(filedata))
+        text_file.write(filedata.encode('utf-8'))
     return 0
 
 

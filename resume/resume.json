@@ -1,15 +1,23 @@
 
 { 
     "Name": "Matt Joyce",
+    "Address": "8802 Ridge Blvd Apt D7  Brooklyn, NY 11209",
     "Phone": "917.596.9619",
     "Email": "matt@surly.bike",
     "GitHub": "http://github.com/openfly/",
     "URL": "http://surly.bike/",
+    "Objective": "I was on the team that created OpenStack at NASA. I am a hacker at NYC Resistor. I consider automation to be an act of writing code and deploying architectures that reduce complexity and provide for programmatic adaptability. A simpler world, longer lasting technology. All one more shoulder for future giants to stand upon.",
     "Experience" : [
+        {
+            "Title": "Senior DevOps Engineer",
+            "Company": "Symphony",
+            "Dates": "9/2015 - Current",
+            "Description": "Production Incident Response\\\\Production Security Incident Response\\\\DevOps / Automation Engineering\\\\Wrote numerous small python utilities.\\\\  General Contributor to Salt / Python repos.\\\\Designed and Deployed Python Build Tool Chain that output Virtualenvs as RPMs\\\\Wrote several bots to assist with Ops workflows.\\\\Wrote our python coding style guide.\\\\Designed and Deployed Resilient DNS solution for synchronizing AWS Route53 to Google GCE.\\\\Wrote tools for ( disaster ) recovering customer defined environments settings.\\\\Wrote Open Source SDK for python for Company product" 
+        },
         {
             "Title" : "Sales Engineer",
             "Company" : "Big Switch Networks",
-            "Dates" : "11/2014-Current",
+            "Dates" : "11/2014-9/2015",
             "Description": "Sales Engineering team was tasked with supporting high profile customers and assisting in pre-sale engagements.  I presented on topics related to SDN, solved problems for customers, designed POC architectures, presented at conferences, and wrote code to demonstrate the features of our product."
         },
         {
@@ -50,7 +58,7 @@
         },
         {
             "Title": "Network Administrator",
-            "Company": "TBWA\\Chiat\\Day",
+            "Company": "TBWA Chiat Day",
             "Dates": "4/2006-8/2008",
             "Description": " UNIX Administration of World Wide web cluster environment. I bridged a gap between the two corporate entities as well as focused my attention on maintaining our global web   server environment. In my spare time I aided in the day to day operation of the national infrastructure housed out of the NY data center."
         },
@@ -73,25 +81,25 @@
             "Description": "Member of web development team.  Worked an Intranet Design for Infinity Radio.  Worked on Web interface to database shared by MS Access forms."
         }
     ],
-    "Honors & Awards": {
-        "Ames Contractor Council Certificate of Excellence": "2012",
-        "NASA Group Achievement Award" : "2011",
-        "Runner up team at Tech Crunch Hack Day" : "2010",
-        "Demo Team at Internet 2": "2003",
-        "Demo Team Leader at NECC": "2003",
-        "Speaker at ITT Vanguard Cyber Insecurity": "2010",
-        "Speaker at Notacon": "2010",
-        "Speaker at Def Con": "2011",
-        "Speaker at Shmoocon": "2013",
-        "Speaker at OpenStack Summit": "Sprint 2013",
-        "Speaker at Kloudcamp Panama": "Summer 2013",
-        "Speaker Selection Committee AppSec USA": "2013",
-        "Speaker at Toorcamp": "2014",
-        "Speaker at DevOps Summit NYC": "2015",
-        "Speaker at Hushcon East": "2015",
-        "Speaker at Hushcon East": "2016",
-        "Speaker at OpenStack Summit": "Fall 2015"
-    },
+    "Honors & Awards": [
+        {"Award": "Ames Contractor Council Certificate of Excellence", "Date": "2012"},
+        {"Award": "NASA Group Achievement Award", "Date" : "2011"},
+        {"Award":"Runner up team at Tech Crunch Hack Day", "Date" : "2010"},
+        {"Award":"Demo Team at Internet 2", "Date": "2003"},
+        {"Award":"Demo Team Leader at NECC", "Date": "2003"},
+        {"Award":"Speaker at ITT Vanguard Cyber Insecurity", "Date": "2010"},
+        {"Award":"Speaker at Notacon", "Date": "2010"},
+        {"Award":"Speaker at Def Con", "Date": "2011"},
+        {"Award":"Speaker at Shmoocon", "Date": "2013"},
+        {"Award":"Speaker at OpenStack Summit", "Date": "Sprint 2013"},
+        {"Award":"Speaker at Kloudcamp Panama", "Date": "Summer 2013"},
+        {"Award":"Speaker Selection Committee AppSec USA", "Date": "2013"},
+        {"Award":"Speaker at Toorcamp", "Date": "2014"},
+        {"Award":"Speaker at DevOps Summit NYC", "Date": "2015"},
+        {"Award":"Speaker at Hushcon East", "Date": "2015"},
+        {"Award":"Speaker at Hushcon East", "Date": "2016"},
+        {"Award":"Speaker at OpenStack Summit", "Date": "Fall 2015"}
+    ],
     "Projects": [
         {
             "Name": "python-symphony",
