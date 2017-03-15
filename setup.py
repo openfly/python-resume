@@ -19,9 +19,9 @@ INSTALL_REQS = parse_requirements('requirements.txt', session=False)
 REQS = [str(ir.req) for ir in INSTALL_REQS]
 
 setup(
-    name='mattjoyce-resume',
-    version='0.1.1',
-    description='The resume of Matt Joyce',
+    name='python-resume',
+    version='0.1.2',
+    description='Resume Generator',
     author='Matt Joyce',
     author_email='matt@surly.bike',
     url='http://surly.bike/',
